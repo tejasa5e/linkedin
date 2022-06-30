@@ -1,0 +1,27 @@
+
+from selenium import webdriver#select the drive 
+from selenium.webdriver.common.by import By#select the id ,or class ,or atribute in the html website 
+from selenium.webdriver.common.keys import Keys#keys are like which key i used  when one code is run
+from selenium.webdriver.support.ui import WebDriverWait#it is used to stop the selenium to to execute another code 
+#it says that wate for the code to find the elements of the page which the progamer has written
+
+#expected_conditions
+from selenium.webdriver.support.expected_conditions import presence_of_element_located#1.1
+#The expected_conditions module contains a set of predefined conditions to use with WebDriverWait.
+from selenium.common.exceptions import NoSuchElementException#1.2
+
+import time 
+
+import string
+import openpyxl
+import os
+from selenium.webdriver.chrome.service import Service
+from bs4 import BeautifulSoup
+import requests
+from linkedin_scraper import Person, actions
+import numpy as np 
+import pandas as pd 
+import json
+from linkedin_search_results import *
+import pymysql as p
+from flask import *
